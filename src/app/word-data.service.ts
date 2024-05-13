@@ -8,4 +8,8 @@ import utilityWords from '../assets/utility-words';
 export class WordDataService {
 
   constructor() { }
+
+  isValidWord(word: string): boolean {
+    return possibleWords.includes(word) || utilityWords.includes(word);
+  };
 }
