@@ -27,6 +27,7 @@ export class WordInputComponent {
     if (isValid) {
       console.log('Valid word!');
     } else {
+      this.word.reset();
       console.log('Invalid word - try again!')
     };
   };
