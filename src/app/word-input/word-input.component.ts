@@ -32,6 +32,7 @@ export class WordInputComponent {
   };
 
   onInputChange(): void {
+    // once word is 5 characters long, check validity
     if (this.word.value.length === 5) {
       this.checkWord();
     };
